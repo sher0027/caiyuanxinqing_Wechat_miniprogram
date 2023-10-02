@@ -1,0 +1,12 @@
+<!--pages/message_information/message_information.wxml-->
+<view class="title">尽心服务</view>
+<view class="content">
+  <text>留言标题：{{message_detail.title}}\n</text>
+  <text>留言时间：{{message_detail.leftDatetimeString}}\n</text>
+  <text>留言内容：{{message_detail.content}}</text>
+</view>
+
+
+<view class="show-bottom">
+    <image class="logo2" src="/images/logo2.png" mode="aspectFit"></image>
+</view>

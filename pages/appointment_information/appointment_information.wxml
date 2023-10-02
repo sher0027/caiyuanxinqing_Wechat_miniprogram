@@ -1,0 +1,77 @@
+<!--pages/appointment_information/appointment_information.wxml-->
+<scroll-view class="main-container" scroll-y>
+
+  <form bindsubmit="appointment">
+    <view class="info-content" style="top: 36rpx">预约信息
+      <image class="info-img" src="/images/img2.png" mode="aspectFit"></image>
+    </view>
+    <view class="info-content" style="top: 328rpx">基本信息
+      <image class="info-img" src="/images/img2.png" mode="aspectFit"></image>
+    </view>
+    <view class="info-content" style="bottom: 988rpx;">咨询内容
+      <image class="info-img" src="/images/img2.png" mode="aspectFit"></image>
+    </view>
+
+    <input name="bookerName" class="input" value="{{bookerName}}" style="top: 97rpx;" placeholder="请输入姓名" placeholder-class="placeholderStyle"/>
+    <input name="bookerPhone" class="input" type="number" value="{{bookerPhone}}" style="top: 206rpx;" placeholder="请输入手机号" placeholder-class="placeholderStyle"/>
+
+
+    <picker class="picker" name="bookerRole" bindchange="change_bookerRole"  value="{{bookerRole}}" range="{{bookerRoleList}}" style="top: 381rpx;">
+      <view class="picker-style" wx:if="{{bookerRole==''||bookerRole == null}}" style="font-family: Alibaba PuHuiTi;font-size: 28rpx;font-weight: normal;font-stretch: normal;line-height: 53rpx;letter-spacing: 0rpx;color: #a2a2a2;">请选择身份</view>
+      <view class="picker-style" wx:else>{{bookerRole}}</view>
+      <image class="picker-img" src="/images/select_flag.png" mode="aspectFit"></image>
+    </picker>
+    <picker class="picker" name="bookerGrade" bindchange="change_bookerGrade" value="{{bookerGrade}}" range="{{bookerGradeList}}" style="top: 520rpx;">
+      <view class="picker-style" wx:if="{{bookerGrade==''||bookerGrade == null}}" style="font-family: Alibaba PuHuiTi;font-size: 28rpx;font-weight: normal;font-stretch: normal;line-height: 53rpx;letter-spacing: 0rpx;color: #a2a2a2;">请选择年级</view>
+      <view class="picker-style" wx:else>{{bookerGrade}}</view>
+      <image class="picker-img" src="/images/select_flag.png" mode="aspectFit"></image> 
+    </picker>
+    <picker class="picker" name="bookerDepartment" bindchange="change_bookerDepartment" value="{{bookerDepartment}}" range="{{bookerDepartmentList}}" style="top: 659rpx;">
+      <view class="picker-style" wx:if="{{bookerDepartment==''||bookerDepartment == null}}" style="font-family: Alibaba PuHuiTi;font-size: 28rpx;font-weight: normal;font-stretch: normal;line-height: 53rpx;letter-spacing: 0rpx;color: #a2a2a2;">请选择系所</view>
+      <view class="picker-style" wx:else>{{bookerDepartment}}</view>
+      <image class="picker-img" src="/images/select_flag.png" mode="aspectFit"></image> 
+    </picker>
+    <picker class="picker" name="topic" bindchange="change_topic" value="{{topic}}" range="{{topicList}}" style="bottom: 869rpx;">
+      <view class="picker-style" wx:if="{{topic==''||topic== null}}" style="font-family: Alibaba PuHuiTi;font-size: 28rpx;font-weight: normal;font-stretch: normal;line-height: 53rpx;letter-spacing: 0rpx;color: #a2a2a2;">请选择咨询主题</view>
+      <view class="picker-style" wx:else>{{topic}}</view>
+      <image class="picker-img" src="/images/select_flag.png" mode="aspectFit"></image> 
+    </picker>
+    
+
+    <view class="radio-title" style="top: 773rpx;">请选择性别：</view>
+    <radio-group class="radio" name="bookerGender" style="top: 774rpx;" bindchange="change_gender">
+      <view style="display:flex;width: 436rpx;position: absolute;left: 292rpx;">
+        <radio value="bookerGender" wx:for-items="{{Gender}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}" style="margin-right: 143rpx;">
+          <text style="left: 17rpx">{{item.value}}</text>
+        </radio>
+      </view>
+    </radio-group>
+
+    <view class="radio-title" style="top: 874rpx;">请选择形式：</view>
+    <radio-group class="radio" name="solution" style="top: 872rpx;" bindchange="change_solution">
+      <view style="display: flex;width: 464rpx;position: absolute;left: 292rpx;">
+        <radio wx:for-items="{{Solution}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}" style="margin-right: 59rpx;">
+          <text style="left: 17rpx">{{item.value}}</text>
+        </radio>
+      </view>
+      <!-- <label style="width: 173rpx;display: flex;position: absolute;left: 292rpx;">
+        <radio value="0">电话沟通</radio>
+      </label>
+      <label style="width: 173rpx;display: flex;position: absolute;left: 524rpx">
+        <radio value="1">线下交流</radio>
+      </label> -->
+    </radio-group>
+
+
+    <textarea name="situationDesc" class="{{isIos?'ios-textarea':'weui-textarea'}}" placeholder="请根据个人情况具体描述主题~" placeholder-class="placeholderStyle" style="word-wrap:break-all" style="bottom: 648rpx;"></textarea>
+    <textarea name="reservedDatetimes" class="{{isIos?'ios-textarea':'weui-textarea'}}" placeholder="请尽可能多而详细地填写有空时段：\n如“周三中午11:30-2:00”等" placeholder-class="placeholderStyle" style="bottom: 434rpx;"></textarea>
+    
+    <button style="width: 661rpx;height: 95rpx" form-type="submit">
+      <view class="btn-name">发起预约</view>
+    </button>
+  </form>  
+
+  <view class="show-bottom">
+    <image src="/images/logo2.png" mode="aspectFit" style="width: 473rpx;height: 112rpx;position: absolute;left: 139rpx;bottom: 100rpx;"></image>
+  </view>
+</scroll-view>

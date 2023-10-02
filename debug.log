@@ -1,0 +1,6 @@
+[0903/215040.332:ERROR:directory_reader_win.cc(43)] FindFirstFile: ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£ (0x3)
+[0905/175357.854:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Sher\AppData\Local\å¾®ä¿¡å¼€å‘è€…å·¥å…·\User Data\1a695ca2de1a85735f93a43fb366c83f\Crashpad\attachments\407c424f-171f-47b9-8088-69d734eae0f8: ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£ (0x3)
+[0905/175358.870:ERROR:http_transport_win.cc(349)] WinHttpWriteData: ²Ù×÷³É¹¦Íê³É¡£ (0x0)
+[0926/152726.906:ERROR:registration_protocol_win.cc(103)] CreateFile: ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÎÄ¼þ¡£ (0x2)
+[0926/152729.011:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Sher\AppData\Local\å¾®ä¿¡å¼€å‘è€…å·¥å…·\User Data\1a695ca2de1a85735f93a43fb366c83f\Crashpad\attachments\2abb8e12-0224-4b00-a34b-d24a5e9f9119: ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£ (0x3)
+[0926/152729.036:ERROR:http_transport_win.cc(178)] WinHttpCrackUrl: ²Ù×÷³É¹¦Íê³É¡£ (0x0)

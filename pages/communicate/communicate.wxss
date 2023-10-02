@@ -1,0 +1,125 @@
+/* pages/communicate/communicate.wxss */
+.title{
+  width: 160rpx;
+	height: 116rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 40rpx;
+	font-weight: bold;
+	font-stretch: normal;
+	line-height: 66rpx;
+  letter-spacing: 0rpx;
+	color: #666666;
+  
+  position: absolute;
+  left: 53rpx;
+  top: 49rpx;
+}
+
+.title.text-style{
+  font-family: Alibaba PuHuiTi;
+	font-size: 28rpx;
+	font-weight: normal;
+	letter-spacing: 0rpx;
+	color: #666666;
+}
+
+.content{
+  width: 644rpx;
+	height: 200rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 53rpx;
+	letter-spacing: 0rpx;
+	color: #666666;
+  
+  position: absolute;
+  left: 53rpx;
+  top: 166rpx;
+}
+.content.text-style{
+  font-family: Alibaba PuHuiTi;
+	font-size: 28rpx;
+	font-weight: normal;
+	letter-spacing: 0rpx;
+	color: #666666;
+}
+
+.btn-call{
+  background-color: #652d91;
+	box-shadow: 0rpx 0rpx 20rpx 0rpx	rgba(28, 86, 122, 0.15);
+	border-radius: 5rpx;
+	border: solid 1rpx #652d91;
+  
+  position: absolute;
+  left: 45rpx;
+  right: 44rpx;
+  bottom: 435rpx;
+}
+.call-title{
+  width: 196rpx;
+	height: 37rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 53rpx;
+	letter-spacing: 0rpx;
+  color: #ffffff;
+  
+  display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	justify-items: center;
+
+	position: absolute;
+  left: 234rpx;
+  bottom: 30rpx;
+}
+
+.btn-administer{
+  background-color: #ffffff;
+	box-shadow: 0rpx 0rpx 20rpx 0rpx	rgba(28, 86, 122, 0.15);
+	border-radius: 5rpx;
+	border: solid 1rpx #652d91;
+  
+  position: absolute;
+  left: 45rpx;
+  right: 44rpx;
+  bottom: 301rpx;
+}
+.administer-title{
+  width: 140rpx;
+	height: 37rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 53rpx;
+	letter-spacing: 0rpx;
+  color: #652d91;
+  
+  display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	justify-items: center;
+
+	position: absolute;
+  left: 261rpx;
+  bottom: 30rpx;
+}
+
+.logo2 {
+	width: 473rpx;
+	height: 112rpx;
+	background-image: linear-gradient(90deg, );
+	position: absolute;
+	left: 139rpx;
+	right: 138rpx;
+	bottom: 103rpx;
+}

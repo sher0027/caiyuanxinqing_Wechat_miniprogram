@@ -1,0 +1,195 @@
+/* pages/appointment_information/appointment_information.wxss */
+.main-container{
+	width: 750rpx;
+	height: 2040rpx;
+	background-image: linear-gradient(90deg, );
+	position: relative;
+}
+
+.info-content{
+  width: 92rpx;
+	height: 31rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 23rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 49rpx;
+	letter-spacing: 0rpx;
+  color: #999999;
+  
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+
+  position: absolute;
+	left: 76rpx;
+}
+.info-img{
+	width: 18rpx;
+	height: 18rpx;
+	position: absolute;
+	right: 107rpx;
+	top: 7rpx;
+}
+
+.input{
+	width: 591rpx;
+	height: 89rpx;
+	padding-left: 35rpx;
+	padding-right: 35rpx;
+	background-color: #ffffff;
+	box-shadow: 0rpx 0rpx 20rpx 0rpx 	rgba(28, 86, 122, 0.15);
+	border-radius: 5rpx;
+	border: solid 1rpx #a2a2a2;
+
+	position: absolute;
+	left: 45rpx;
+	right: 46rpx;
+	top: 97rpx;
+}
+.placeholderStyle{
+	height: 37rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 53rpx;
+	letter-spacing: 0rpx;
+	color: #a2a2a2;
+}
+
+.picker{
+	width: 661rpx;
+	height: 89rpx;
+	background-color: #ffffff;
+	box-shadow: 0rpx 0rpx 20rpx 0rpx	rgba(28, 86, 122, 0.15);
+	border-radius: 5rpx;
+	border: solid 1rpx #a2a2a2;
+
+	position: absolute;
+	left: 45rpx;
+	right: 44rpx;
+}
+.picker-style{
+	display: flex;
+	align-items: center;
+	align-content: center;
+
+	position: absolute;
+	left: 0rpx;
+	top: 0rpx;
+	padding-left: 35rpx;
+
+	width: 626rpx;
+	height: 89rpx;
+}
+.picker-img{
+	width: 26rpx;
+	height: 19rpx;
+	position: absolute;
+	right: 40rpx;
+	bottom: 33rpx;
+}
+
+.radio-title{
+	width: 168rpx;
+	height: 37rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 53rpx;
+	letter-spacing: 0rpx;
+	color: #a2a2a2;
+
+	position: absolute;
+	left: 80rpx;
+	right: 510rpx;
+}
+
+radio .wx-radio-input{
+	width: 44rpx;
+	height: 44rpx;
+	background-color: #ffffff;
+	box-shadow: 0rpx 0rpx 20rpx 0rpx	rgba(28, 86, 122, 0.15);
+	border-radius: 5rpx;
+	border: solid 1rpx #a2a2a2;
+}
+
+.radio{
+	font-family: Alibaba PuHuiTi;
+	font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 53rpx;
+	letter-spacing: 0rpx;
+	color: #a2a2a2;
+	display: flex;
+	position: absolute;
+}
+
+.ios-textarea{
+	width: 611rpx;
+	height: 177rpx;
+	padding-top: 15rpx;
+	padding-left: 25rpx;
+	padding-right: 25rpx;
+	background-color: #ffffff;
+	box-shadow: 0rpx 0rpx 20rpx 0rpx 	rgba(28, 86, 122, 0.15);
+	border-radius: 5rpx;
+	border: solid 1rpx #a2a2a2;
+
+	position: absolute;
+	left: 45rpx;
+	right: 44rpx;
+}
+
+.weui-textarea{
+	width: 591rpx;
+	height: 167rpx;
+	padding-top: 25rpx;
+	padding-left: 35rpx;
+	padding-right: 35rpx;
+	background-color: #ffffff;
+	box-shadow: 0rpx 0rpx 20rpx 0rpx 	rgba(28, 86, 122, 0.15);
+	border-radius: 5rpx;
+	border: solid 1rpx #a2a2a2;
+
+	position: absolute;
+	left: 45rpx;
+	right: 44rpx;
+}
+
+button{
+	background-color: #652d91;
+	box-shadow: 0rpx 0rpx 20rpx 0rpx	rgba(28, 86, 122, 0.15);
+	border-radius: 5rpx;
+	border: solid 1rpx #652d91;
+
+	position: absolute;
+	left: 45rpx;
+	right: 44rpx;
+	bottom: 265rpx;
+}
+.btn-name{
+	width: 112rpx;
+	height: 37rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 53rpx;
+	letter-spacing: 0rpx;
+	color: #ffffff;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	
+	position: absolute;
+	left: 275rpx;
+	right: 274rpx;
+	bottom: 30rpx;
+}

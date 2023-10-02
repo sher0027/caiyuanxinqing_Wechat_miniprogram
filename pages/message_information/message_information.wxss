@@ -1,0 +1,59 @@
+/* pages/message_information/message_information.wxss */
+.title{
+  width: 160rpx;
+	height: 116rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 40rpx;
+	font-weight: bold;
+	font-stretch: normal;
+	line-height: 66rpx;
+  letter-spacing: 0rpx;
+	color: #666666;
+  
+  position: absolute;
+  left: 53rpx;
+  right: 537rpx;
+  top: 49rpx;
+}
+
+.title.text-style{
+  font-family: Alibaba PuHuiTi;
+	font-size: 28rpx;
+	font-weight: normal;
+	letter-spacing: 0rpx;
+	color: #666666;
+}
+
+.content{
+  width: 644rpx;
+	height: 143rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 53rpx;
+	letter-spacing: 0rpx;
+	color: #666666;
+  
+  position: absolute;
+  left: 53rpx;
+  right: 265rpx;
+  top: 166rpx;
+}
+.content.text-style{
+  font-family: Alibaba PuHuiTi;
+	font-size: 28rpx;
+	font-weight: normal;
+	letter-spacing: 0rpx;
+	color: #666666;
+}
+
+.logo2 {
+	width: 473rpx;
+	height: 112rpx;
+	background-image: linear-gradient(90 deg, );
+	position: absolute;
+	left: 139rpx;
+	right: 138rpx;
+	bottom: 103rpx;
+}

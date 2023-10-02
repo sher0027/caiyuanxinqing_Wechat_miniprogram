@@ -1,0 +1,7 @@
+<!--pages/authorize/authorize.wxml-->
+<view wx:if="{{!hasUserInfo}}" class="auth">
+  <image src="/images/MSE.png" class="img" mode="aspectFill"></image>
+  <view  class="describe">小程序需要用户授权，点击下方按钮授权</view>
+  <button class="btn" wx:if="{{canIUseGetUserProfile}}" bindtap="login">点击微信授权</button>
+</view>
+

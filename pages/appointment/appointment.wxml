@@ -1,0 +1,68 @@
+<!--pages/appointment/appointment.wxml-->
+<view class="show-top">
+  <view class="bg1"></view>
+  <view class="bg-M">M</view>
+  <view class="bg-S">S</view>
+  <view class="bg-E">E</view>
+  <image src="/images/logo1_trans.png" mode="aspectFit" style="width: 426rpx;height: 86rpx;position: absolute;left: 20rpx;top: 79rpx;"></image>
+  <div class="box"> 
+    <image class="bg2" src="/images/bg2.png"></image>
+  </div>
+</view>
+
+<button class="btn" style="width: 315rpx;height: 164rpx" bindtap="make_appointment">
+  <image src="/images/img1.png" style="width: 90rpx;height: 90rpx;position: absolute;left: 25rpx;top: 37rpx" mode="aspectFit"></image>
+  <view class="btn-head">知心预约</view>
+  <view class="btn-body">一键点击预约</view>
+</button>
+
+
+<view class="info-hint" style="width: 315rpx;height: 164rpx">
+  <image src="/images/img2.png" style="width: 18rpx;height: 18rpx;position: absolute;left: 47rpx;top: 47rpx;" mode="aspectFit"></image>
+  <view class="info-title" style="position: absolute;left: 101rpx;top: 40rpx;">进行中：{{unfinished.totalRecord}}个</view>
+  <image src="/images/img2.png" style="width: 18rpx;height: 18rpx;position: absolute;left: 47rpx;bottom: 48rpx;" mode="aspectFit"></image>
+  <view class="info-title" style="position: absolute;left: 101rpx;bottom: 40rpx;">已完成：{{finished.totalRecord}}个</view>  
+</view>
+
+
+<view style="padding-bottom: 500rpx;">
+  <view class="info" style="top: 198rpx;">
+    <view class="info-title" style="width: 69rpx;position: absolute;left: 33rpx;top: -52rpx;">进行中
+      <image src="/images/img2.png" mode="aspectFit" style="width: 18rpx;height: 18rpx;position: absolute;right: 84rpx;top: 8rpx;"></image>
+    </view>
+
+    <button class="appointment-info" bindtap="communicate" style="width: 661rpx;height: 174rpx;" wx:for="{{unfinished.datalist}}" wx:key="key" data-index="{{index}}" data-id="0">
+      <view class="appointment-border"></view>
+      <view class="appointment-title">知心服务</view>
+      <view class="appointment-time">{{item.createdDatetimeString}}</view>
+      <view class="line"></view>
+      <view class="appointment-detail">预约主题：{{item.topic}} | 预约老师：{{item.solverName}}</view>
+      <image src="/images/call.png" mode="aspectFit" style="width: 50rpx;height: 50rpx;position: absolute;right: 47rpx;top: 31rpx;"></image> 
+    </button>
+  </view>
+
+  <view class="info" style="top: 266rpx;">
+    <view class="info-title" style="width: 69rpx;position: absolute;left: 33rpx;top: -52rpx;">已完成
+      <image src="/images/img2.png" style="width: 18rpx;height: 18rpx;position: absolute;right: 84rpx;top: 8rpx;"mode="aspectFit"></image>
+    </view>  
+
+    <button class="appointment-info" bindtap="communicate" style="width: 661rpx;height: 174rpx;top: 0rpx;" wx:for="{{finished.datalist}}" wx:key="key" data-index="{{index}}" data-id="1">
+      <view class="appointment-border"></view>
+      <view class="appointment-title">知心服务</view>
+      <view class="appointment-time">{{item.createdDatetimeString}}</view>
+      <view class="line"></view>
+      <view class="appointment-detail">预约主题：{{item.topic}} | 预约老师：{{item.solverName}}</view>
+      <image src="/images/call.png" mode="aspectFit" style="width: 50rpx;height: 50rpx;position: absolute;right: 47rpx;top: 31rpx;" ></image>
+    </button> 
+  </view>
+</view>
+
+<view class="show-bottom">
+    <image src="/images/logo2.png" mode="aspectFit" style="width: 473rpx;height: 112rpx;position: absolute;left: 139rpx;top: 0rpx;bottom: 72rpx;"></image>
+</view>
+
+
+
+
+
+

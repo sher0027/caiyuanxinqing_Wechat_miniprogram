@@ -1,0 +1,30 @@
+<!--pages/message/message.wxml-->
+<scroll-view class="main-container" scroll-y>
+<form bindsubmit="service">
+    <input class="input" name="title" placeholder="请输入留言标题" maxlength="{{max}}" placeholder-class="placeholderStyle" style="top: 69rpx;" bindinput="inputs"/>
+    <text class="max-hint">{{currentWordNumber}}/{{max}}字</text>
+    <input class="input" name="leaverName" value="{{leaverName}}" placeholder="请输入姓名" placeholder-class="placeholderStyle" style="bottom: 729rpx;"/>
+    <input class="input" name="leaverPhone" value="{{leaverPhone}}" placeholder="请输入手机号" placeholder-class="placeholderStyle" type="number" style="bottom: 622rpx;"/>
+    <picker class="picker" name="bookerDepartment" bindchange="change_bookerDepartment" value="{{bookerDepartment}}" range="{{bookerDepartmentList}}" style="bottom: 515rpx;">
+      <view class="picker-style" wx:if="{{bookerDepartment==''||bookerDepartment == null}}" style="font-family: Alibaba PuHuiTi;font-size: 28rpx;font-weight: normal;font-stretch: normal;line-height: 53rpx;letter-spacing: 0rpx;color: #a2a2a2;">请选择系所</view>
+      <view class="picker-style" wx:else>{{bookerDepartment}}</view>
+      <image class="picker-img" src="/images/select_flag.png" mode="aspectFit"></image> 
+    </picker>
+    <input class="input" name="leaverEmail" value="{{leaverEmail}}" placeholder="请输入邮箱地址" placeholder-class="placeholderStyle" style="bottom: 409rpx;"/>
+
+    <textarea class="{{isIos?'ios-textarea':'weui-textarea'}}" name="content" placeholder="请输入留言内容" placeholder-class="placeholderStyle" maxlength="{{Max}}" bindinput="texts"></textarea>
+    <text class="Max-hint">{{CurrentWordNumber}}/{{Max}}字</text>
+    
+    <view class="message-hint">回复选择
+        <image src="/images/img2.png" mode="aspectFit" style="width: 18rpx;height: 18rpx;position: absolute;right: 107rpx;top: 7rpx;"></image>
+    </view>
+
+    <button style="width: 661rpx;height: 95rpx" form-type="submit">
+        <view class="btn-submit">发布诉求</view>
+    </button>
+</form>    
+
+    <view class="show-bottom">
+        <image src="/images/logo2.png" mode="aspectFit" style="width: 473rpx;height: 112rpx;position: absolute;left: 139rpx;bottom: 103rpx;"></image>
+    </view>
+</scroll-view>

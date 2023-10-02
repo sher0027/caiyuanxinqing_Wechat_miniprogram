@@ -1,0 +1,35 @@
+<!--pages/service/service.wxml-->
+<view class="show-top">
+  <view class="bg1"></view>
+  <view class="bg-M">M</view>
+  <view class="bg-S">S</view>
+  <view class="bg-E">E</view>
+  <image src="/images/logo1_trans.png" mode="aspectFit" style="width: 426rpx;height: 86rpx;position: absolute;left: 20rpx;top: 79rpx;"></image>
+  <div class="box"> 
+    <image class="bg2" src="/images/bg2.png"></image>
+  </div>
+</view>
+
+<button class="shortcut" style="width: 661rpx;height: 164rpx" bindtap="leave_message">
+  <image class="shortcut-img" src="/images/shortcut_img.png" mode="aspectFit"></image>
+  <view class="shortcut-head">尽心服务</view>
+  <view class="shortcut-body">点击一键写诉求</view>
+</button>
+
+<view class="message" style="padding-bottom: 300rpx;">
+  <button class="message-list"style="width: 661rpx;height: 200rpx;" wx:for="{{message}}" wx:key="key" bindtap="detail" data-index="{{index}}">
+    <view class="message-title">{{item.title}}</view>
+    <view class="line"></view>
+    <view class="message-time">{{item.leftDatetimeString}}</view>
+    <text class="message-content">{{item.content}}</text>
+  </button>
+</view>
+
+
+<view class="show-bottom">
+    <image src="/images/logo2.png" mode="aspectFit" style="width: 473rpx;height: 112rpx;position: absolute;left: 139rpx;top: 0rpx;bottom: 72rpx;"></image>
+</view>
+
+
+
+

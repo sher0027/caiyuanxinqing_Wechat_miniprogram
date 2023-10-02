@@ -1,0 +1,23 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+.tab-bar {
+	width: 750px;
+	height: 107px;
+}
+
+.tab-bar-background {
+	width: 750rpx;
+	height: 107rpx;
+	background-color: #ffffff;
+	box-shadow: 0rpx 6rpx 25rpx 0rpx 
+		rgba(28, 86, 122, 0.3);
+}

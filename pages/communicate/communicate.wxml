@@ -1,0 +1,19 @@
+<!--pages/communicate/communicate.wxml-->
+<view class="title">知心服务</view>
+<view class="content">
+  <text>预约主题：{{appoint_detail.topic}}\n</text>
+  <text>预约时间：{{appoint_detail.solvedDatetimeString}}\n</text>
+  <text>预约老师：{{appoint_detail.solverName}}\n</text>
+  <text>预约地点：{{appoint_detail.solvedPlace}}</text>
+</view>
+
+<button style="width: 661rpx;height: 95rpx" bindtap="call" class="btn-call">
+    <view class="call-title">和老师电话沟通</view>
+</button>
+
+<button style="width: 661rpx;height: 95rpx" bindtap="administer" class="btn-administer" open-type="contact">
+    <view class="administer-title">沟通管理员</view>
+</button>
+<view class="show-bottom">
+    <image class="logo2" src="/images/logo2.png" mode="aspectFit"></image>
+</view>

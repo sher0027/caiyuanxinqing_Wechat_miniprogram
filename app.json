@@ -1,0 +1,37 @@
+{
+  "pages":[
+    "pages/appointment/appointment",
+    "pages/appointment_information/appointment_information",
+    "pages/service/service",
+    "pages/message/message",
+    "pages/message_information/message_information",
+    "pages/communicate/communicate",
+    "pages/authorize/authorize"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#652d91",
+    "backgroundColor": "#652d91"
+  },
+  "tabBar": {
+    "list": [
+      {
+      "pagePath": "pages/appointment/appointment",
+      "text": "知心预约",
+      "iconPath": "images/tabbar1_unselected.png",
+      "selectedIconPath": "images/tabbar1.png"
+      },
+      {
+      "pagePath": "pages/service/service",
+      "text": "尽心服务",
+      "iconPath": "images/tabbar2_unselected.png",
+      "selectedIconPath": "images/tabbar2.png"
+      }   
+    ],
+    "color": "#666666",
+    "borderStyle": "black",
+    "selectedColor": "#3a3a3a",
+    "backgroundColor": "#ffffff"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
